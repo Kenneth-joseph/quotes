@@ -9,6 +9,7 @@ import { from } from 'rxjs';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteComponent } from './quote/quote.component';
 import { VoteComponent } from './vote/vote.component';
+import { DatepipeComponent } from './datepipe/datepipe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VoteComponent } from './vote/vote.component';
     InputFormComponent,
     QuoteDetailsComponent,
     QuoteComponent,
-    VoteComponent
+    VoteComponent,
+    DatepipeComponent
   ],
   imports: [
     BrowserModule,
