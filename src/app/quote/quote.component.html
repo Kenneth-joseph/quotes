@@ -33,7 +33,10 @@
                </h6>
               <p class="card-text ">" {{QuoteC.quotes}} "</p>
             </div>
+            <hr>
+            <app-vote></app-vote>
             <app-quote-details (done)= deleteQuote($event,i) ></app-quote-details>
+
           </div>
 
       </div>
