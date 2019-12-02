@@ -9,7 +9,8 @@ import { from } from 'rxjs';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteComponent } from './quote/quote.component';
 import { VoteComponent } from './vote/vote.component';
-import { DatepipeComponent } from './datepipe/datepipe.component';
+import { DateCPipe } from './date-c.pipe';
+import { MomentModule} from 'ngx-moment';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,14 @@ import { DatepipeComponent } from './datepipe/datepipe.component';
     QuoteDetailsComponent,
     QuoteComponent,
     VoteComponent,
-    DatepipeComponent
+    DateCPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MomentModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,6 +14,7 @@ export class InputFormComponent implements OnInit {
 
   submitQuote() {
     this.addQuote.emit(this.newQuote);
+    this.newQuote = new QuoteC( 0, '', '', '', new Date());
   }
   constructor() { }
 
