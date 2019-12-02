@@ -10,16 +10,16 @@ import { format } from 'url';
 export class QuoteComponent implements OnInit {
 
   quote: QuoteC[] = [
-    {id: 1 , name: 'kent' , author: 'kent joz', quotes: 'life is great if we make great choices'}
+    new QuoteC (1 , 'kent' , 'kent joz', 'life is great if we make great choices' , new Date(2012, 2 , 12))
   ];
 
   addNewQuote(quoteR) {
-    let quoteRLength = this.quote.length;
+    const quoteRLength = this.quote.length;
     quoteR.id = quoteRLength + 1;
     this.quote.push(quoteR);
 
 }
- deleteQuote(done, index){
+ deleteQuote(done, index) {
    if ( done ) {
      const todelete = confirm(`Are you sure you want to delete: ${this.quote[index].name}?`);
      if (todelete) {

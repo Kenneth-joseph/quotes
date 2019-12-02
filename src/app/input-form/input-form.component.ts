@@ -8,7 +8,7 @@ import {QuoteC} from '../quote-c';
 })
 export class InputFormComponent implements OnInit {
 
-  newQuote = new QuoteC(0, '', '', '');
+  newQuote = new QuoteC(0, '', '', '' , new Date());
 
   @Output() addQuote = new EventEmitter<QuoteC>();
 

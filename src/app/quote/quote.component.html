@@ -26,13 +26,14 @@
         <div class="card mt-3" *ngFor='let QuoteC of quote; let i=index' >
             <div class="card-body c_bdy" >
               <h5 class="card-title font-weight-bold  au1" >
-                  {{QuoteC.author}}
+                  <p>Author : {{QuoteC.author}} </p>
               </h5>
               <h6 class="card-subtitle mb-2 text-muted"  >
-                  {{QuoteC.name}}
+                 <p>posted by : {{QuoteC.name}} </p>
                </h6>
               <p class="card-text ">" {{QuoteC.quotes}} "</p>
             </div>
+            {{QuoteC.date|date}}
             <hr>
             <app-vote></app-vote>
             <div class="delt">
