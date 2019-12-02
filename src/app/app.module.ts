@@ -8,13 +8,15 @@ import {FormsModule} from '@angular/forms';
 import { from } from 'rxjs';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteComponent } from './quote/quote.component';
+import { VoteComponent } from './vote/vote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputFormComponent,
     QuoteDetailsComponent,
-    QuoteComponent
+    QuoteComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,
