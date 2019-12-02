@@ -12,11 +12,11 @@ export class VoteComponent implements OnInit {
   upvote = 0;
   downvote = 0;
 
-  like(){
+  like() {
     this.upvote ++;
   }
 
-  dislike(){
+  dislike() {
     this.downvote ++;
   }
 
