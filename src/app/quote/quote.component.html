@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-lg-6  col-md-12 quot bg-warning">
-        <div class="card mt-3" *ngFor='let QuoteC of quote'>
+        <div class="card mt-3" *ngFor='let QuoteC of quote; let i=index' >
             <div class="card-body c_bdy" >
               <h5 class="card-title font-weight-bold  au1" >
                   {{QuoteC.author}}
@@ -33,6 +33,7 @@
                </h6>
               <p class="card-text ">" {{QuoteC.quotes}} "</p>
             </div>
+            <app-quote-details (done)= deleteQuote($event,i) ></app-quote-details>
           </div>
 
       </div>

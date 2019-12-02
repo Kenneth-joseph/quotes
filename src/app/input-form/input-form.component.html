@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <form (ngSubmit)='submitQuote()' #quoteform='ngForm' >
+    <form (ngSubmit)='submitQuote()' #quoteform='ngForm'>
         <div class="form-group w-50">
             <label for="exampleInputPassword1">Name</label>
             <input type="text" class="form-control" id="name1" placeholder="name" [(ngModel)]='newQuote.name' name="name" #name='ngModel' required>
