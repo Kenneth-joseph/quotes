@@ -1,6 +1,6 @@
-<div class="container-fluid">
-    <form (ngSubmit)='submitQuote()' #quoteform='ngForm'>
-        <div class="form-group w-50">
+<div class="container-fluid form1 justify-content-center">
+    <form (ngSubmit)='submitQuote()' #quoteform='ngForm' class="text-center p-3">
+        <div class="form-group w-50 ">
             <label for="exampleInputPassword1">Name</label>
             <input type="text" class="form-control" id="name1" placeholder="name" [(ngModel)]='newQuote.name' name="name" #name='ngModel' required>
              <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
