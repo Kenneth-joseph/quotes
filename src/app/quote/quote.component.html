@@ -1,0 +1,40 @@
+
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-6">
+       <div class="card mt-2">
+         <div class="card-header">
+            <h1 class="h_t text-center mt-3">QUOTES </h1>
+         </div>
+       </div>
+
+       <div class="jumbotron jumbotron-fluid mt-3">
+          <div class="container">
+            <h1 class="display-4 text-center">Enlighten The World</h1>
+            <p class="lead">Welcome to the great page of quotes, in this page we help rncourage and build others using our Quotes which are being posted by our uses, like you whom are willing to venture more into the literature and share there great skills with the world.</p>
+          </div>
+        </div>
+  <!--form input-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6  col-md-12">
+        <app-input-form (addQuote)='addNewQuote($event)'></app-input-form>
+    </div>
+
+    <div class="col-lg-6  col-md-12 quot bg-warning">
+        <div class="card mt-3" *ngFor='let QuoteC of quote'>
+            <div class="card-body c_bdy" >
+              <h5 class="card-title font-weight-bold  au1" >
+                  {{QuoteC.author}}
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted"  >
+                  {{QuoteC.name}}
+               </h6>
+              <p class="card-text ">" {{QuoteC.quotes}} "</p>
+            </div>
+          </div>
+
+      </div>
+  </div>
+</div>
