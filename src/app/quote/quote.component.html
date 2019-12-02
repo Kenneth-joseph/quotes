@@ -28,13 +28,17 @@
               <h5 class="card-title font-weight-bold  au1" >
                   <p>Author : {{QuoteC.author}} </p>
               </h5>
-              <h6 class="card-subtitle mb-2 text-muted"  >
+              <h6 class="card-subtitle  text-muted"  >
                  <p>posted by : {{QuoteC.name}} </p>
                </h6>
               <p class="card-text ">" {{QuoteC.quotes}} "</p>
             </div>
-            {{QuoteC.date|date}}
+
+            <div class="date mr-3">
+             <p>Date : {{QuoteC.date|date}}</p>
+            </div>
             <hr>
+
             <app-vote></app-vote>
             <div class="delt">
               <app-quote-details (done)= deleteQuote($event,i) ></app-quote-details>
