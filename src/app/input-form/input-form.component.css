@@ -3,6 +3,7 @@ form
 background-color: #cbb0a7;
 }
 
-.form1{
-  margin: 0 auto;
+.inp ,#text{
+margin-left:50%;
 }
+
