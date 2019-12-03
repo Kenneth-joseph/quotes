@@ -3,7 +3,7 @@
         <div class="form-group w-50">
             <label for="exampleInputPassword1" id="text">Name</label>
             <input type="text" class="form-control inp" id="name1" placeholder="name" [(ngModel)]='newQuote.name' name="name" #name='ngModel' required>
-             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+             <div [hidden]="name.valid || name.pristine" class="alert alert-danger inp">
                   <p>Name is Required</p>
              </div>
 
@@ -12,7 +12,7 @@
           <div class="form-group w-50">
               <label for="exampleInputPassword1" id="text">Author</label>
               <input type="text" class="form-control inp" id="exampleInputPassword1" placeholder="Author" [(ngModel)]='newQuote.author' name="author" #author='ngModel' required>
-              <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <div [hidden]="author.valid || author.pristine" class="alert alert-danger inp">
                 <p>Author is Required</p>
            </div>
 
