@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6  col-md-12">
+    <div class="col-lg-6  col-md-12 mb-2">
         <app-input-form (addQuote)='addNewQuote($event)'></app-input-form>
     </div>
 
@@ -34,7 +34,7 @@
               <p class="card-text ">" {{QuoteC.quotes}} "</p>
             </div>
 
-            <div class="date mr-3">
+            <div class="date">
              <p>Date : {{QuoteC.date|dateC}}</p>
             </div>
             <hr>
