@@ -33,7 +33,7 @@
 ## Screenshots
 > **Visual presentation of my work**
  >>##### shows the main page
-![this shows the page](assets/images/quotes.png)
+![this shows the page](src/assets/images/quotes.png)
 
 ## Description
 >This page is a great platform for people to share there quotes with the world and the users can like or dislike, the page also shows time when the post was done.
